@@ -1,0 +1,22 @@
+Shotgun:
+
+0 - glonț orb
+1 - glonț adevărat
+
+Iteme:
+
+0 - cuțit
+1 - lupă
+2 - bere
+3 - cătușe
+4 - țigări
+5 - invertor
+6 - celular
+7 - medicament expirat
+8 - adrenalină
+9 - shotgun
+
+Glonț shotgun:
+
+0 - Eu
+1 - Adversar
