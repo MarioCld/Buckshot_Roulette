@@ -1,0 +1,22 @@
+Shotgun:
+
+0 - blank round
+1 - live round
+
+Items:
+
+0 - handsaw
+1 - magnifying glass
+2 - beer
+3 - handcuffs
+4 - cigarette pack
+5 - inverter
+6 - burner phone
+7 - expired medicine
+8 - adrenaline
+9 - shotgun
+
+Shotgun bullet:
+
+0 - Me
+1 - Opponent
