@@ -1,0 +1,22 @@
+Escopeta:
+
+0 - bala de salva
+1 - bala de verdad
+
+Objetos:
+
+0 - serrucho
+1 - lupa
+2 - cerveza
+3 - esposas
+4 - cigarros
+5 - inversor
+6 - teléfono desechable
+7 - medicamento caducado
+8 - adrenalina
+9 - escopeta
+
+Bala de escopeta:
+
+0 - Yo
+1 - Oponente
