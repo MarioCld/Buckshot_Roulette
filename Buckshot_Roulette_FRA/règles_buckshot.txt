@@ -1,0 +1,22 @@
+Shotgun:
+
+0 - balles à blanc
+1 - balles réelles
+
+Objets:
+
+0 - scie à main
+1 - loupe
+2 - bière
+3 - menottes
+4 - cigarettes
+5 - inverseur
+6 - téléphone à brûleur
+7 - médicament périmé
+8 - adrénaline
+9 - fusil de chasse
+
+Balles de fusil de chasse:
+
+0 - Moi
+1 - Adversaire 

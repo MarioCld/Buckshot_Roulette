@@ -1,3 +1,11 @@
 Pentru orice bug-uri în cod sau greșeli la traducere, vă rog să mă contactați la adresa de gmail: culdamario@gmail.com !!!
+Pentru a funcționa codul pe Linux, schimbați <windows.h> cu <unistd.h> !
 
 For any bugs in the code or translation mistakes, please contact me on my personal gmail: culdamario@gmail.com !!!
+To make the code work on Linux, change <windows.h> with <unistd.h> !
+
+Pour tout problème dans le code ou toute erreur de traduction, veuillez me contacter sur mon gmail personnel : culdamario@gmail.com !!!
+Pour que le code fonctionne sous Linux, remplacez <windows.h> par <unistd.h> !
+
+Para cualquier error en el código o errores en la traducción, por favor póngase en contacto conmigo en mi gmail personal: culdamario@gmail.com !!!
+¡Para que el código funcione en Linux, cambie <windows.h> por <unistd.h> !
