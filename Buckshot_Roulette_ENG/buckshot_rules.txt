@@ -16,7 +16,7 @@ Items:
 8 - adrenaline
 9 - shotgun
 
-Shotgun bullet:
+Shotgun bullets:
 
 0 - Me
 1 - Opponent

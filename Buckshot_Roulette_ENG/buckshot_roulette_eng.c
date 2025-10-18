@@ -488,7 +488,7 @@ void shotgun_bullet(player *p, player *pla, int *cut, int *safe, int shotgun[],i
                 }
                 (*no_bullets)--; //decrement the number of bullets 
             }
-            else
+            else //if it is a blind round
             {
                 printf("\nThe player is safe...for now!\n");
                 (*safe)++; // it’s the same player’s turn
@@ -530,10 +530,9 @@ void shotgun_bullet(player *p, player *pla, int *cut, int *safe, int shotgun[],i
                 }
                 (*no_bullets)--; //decrease the number of bullets 
             }
-            else
+            else //if it is a blind round
             {
                 printf("\nThe opponent is safe...for now!\n");
-                (*safe)++; //it’s the same player’s turn
                 (*no_blank_rounds)--; //decrease the number of blank rounds 
                 for(int i=0;i<*no_bullets-1;i++)
                 {
@@ -658,7 +657,7 @@ void select_item(int shotgun[], player *p, item *it, int *no_blank_rounds, int *
     int choose; //item choice
     char chosen[20]; //item chosen
     int ok; //check if the player has the item he wants to use
-    int cut=0; //if the player
+    int cut=0; //if the player uses the handsaw
     int safe=0; //if the player shot himself and was safe
     printf("\nItem = ");
     scanf("%d",&choose); //choose which item you use
@@ -880,7 +879,7 @@ int main()
                     advantage2=0; //player 2’s turn passed
                     if(p1->lives>0) //if player 1 is not dead
                     {
-                        printf("\nJ Player 1 chooses an item!\n");
+                        printf("\nPlayer 1 chooses an item!\n");
                         select_item(shotgun,p1,it,&no_blank_rounds,&no_live_rounds,&no_bullets,&round,p2,&advantage1,&advantage2,&tied1,&tied2,&no_item); //player 1 chooses an item
                     }
                 }
@@ -899,7 +898,7 @@ int main()
                             no_bullets=(rand()%shotgun_bullets)+6; //number of bullets between 6 and 8 for the shotgun 
                             break;
                     }
-                    printf("\nThe shoygun is reloaded...\n");
+                    printf("\nThe shotgun is reloaded...\n");
                     shotgun=load_shotgun(shotgun,&no_blank_rounds,&no_live_rounds,&no_bullets); //the shotgun is reloaded
                     Sleep(sleep);
                     printf("\nNumber of bullets = %d\n",no_bullets); //print the number of bullets in the shotgun
@@ -917,7 +916,7 @@ int main()
                     advantage2=1; //it is player 2’ turn
                     if(p2->lives>0) //if player 2 is not dead
                     {
-                        printf("\nJPlayer 2 chooses an item!\n");
+                        printf("\nPlayer 2 chooses an item!\n");
                         select_item(shotgun,p2,it,&no_blank_rounds,&no_live_rounds,&no_bullets,&round,p1,&advantage1,&advantage2,&tied1,&tied2,&no_item); //player 2 chooses an item
                     }
                 }
