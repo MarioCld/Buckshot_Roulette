@@ -488,7 +488,7 @@ void glont_shotgun(jucator *j, jucator *juc, int *taiat, int *scapat, int shotgu
                 }
                 (*nr_gloante)--; //decrementam numarul de gloante
             }
-            else
+            else //daca glontul e orb
             {
                 printf("\nJucatorul a scapat...momentan!\n");
                 (*scapat)++; //ramane randul aceluiasi jucator
@@ -502,7 +502,7 @@ void glont_shotgun(jucator *j, jucator *juc, int *taiat, int *scapat, int shotgu
                 printf("\nJucatorul are %d vieti!\n",j->vieti);
             }
         }
-        else //daca jucatorul se impusca adversarul
+        else //daca jucatorul impusca adversarul
         {
             printf("\nJucatorul impusca adversarul!\n");
             Sleep(somn);
@@ -530,10 +530,9 @@ void glont_shotgun(jucator *j, jucator *juc, int *taiat, int *scapat, int shotgu
                 }
                 (*nr_gloante)--; //decrementam numarul de gloante
             }
-            else
+            else //daca glontul e orb
             {
                 printf("\nAdversarul a scapat...momentan!\n");
-                (*scapat)++; //ramane randul aceluiasi jucator
                 (*nr_gloante_oarbe)--; //decrementam numarul de gloante oarbe
                 for(int i=0;i<*nr_gloante-1;i++)
                 {
@@ -658,7 +657,7 @@ void selecteaza_item(int shotgun[], jucator *j, item *it, int *nr_gloante_oarbe,
     int aleg; //alegere item
     char ales[20]; //item ales
     int ok; //verifica daca jucatorul are item-ul pe care vrea sa-l foloseasca
-    int taiat=0; //daca jucatorul
+    int taiat=0; //daca jucatorul foloseste cutitul
     int scapat=0; //daca jucatorul s-a impuscat singur si a scapat
     printf("\nItem = ");
     scanf("%d",&aleg); //alege ce item folosesti
