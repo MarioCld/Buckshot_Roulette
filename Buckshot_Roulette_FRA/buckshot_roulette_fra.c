@@ -489,7 +489,7 @@ void balle_fusil_de_chasse(joueur *j, joueur *jou, int *coupe, int *sauve, int f
                 }
                 (*no_balles)--; //on diminue le nombre de balles 
             }
-            else
+            else //on augmente le nombre de balles a blanc
             {
                 printf("\nLe joueur est sauve...momentanement!\n");
                 (*sauve)++; //c’est encore le tour du même joueur
@@ -531,10 +531,9 @@ void balle_fusil_de_chasse(joueur *j, joueur *jou, int *coupe, int *sauve, int f
                 }
                 (*no_balles)--; //on diminue le nombre de balles 
             }
-            else
+            else //on augmente le nombre de balles a blanc
             {
                 printf("\nL’adversaire est sauve...momentanement!\n");
-                (*sauve)++; //c’est encore le tour du même joueur
                 (*no_balles_a_blanc)--; //on diminue le nombre de balles a blanc
                 for(int i=0;i<*no_balles-1;i++)
                 {
@@ -659,7 +658,7 @@ void selectionner_objet(int fusil_de_chasse[], joueur *j, objet *it, int *no_bal
     int choisis; //choix objet
     char choisi[20]; //objet choisi
     int ok; //verifier si le joueur a l’objet qu’il veut utiliser
-    int coupe=0; //si le joueur
+    int coupe=0; //si le joueur utilise la scie_a_main
     int sauve=0; //si le joueur s’est tire dessus et s’est sauve
     printf("\nObjet = ");
     scanf("%d",&choisis); //choisis l’objet que tu souhaites utiliser

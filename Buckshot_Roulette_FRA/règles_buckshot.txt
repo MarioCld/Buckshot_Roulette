@@ -19,4 +19,4 @@ Objets:
 Balles de fusil de chasse:
 
 0 - Moi
-1 - Adversaire 
+1 - Adversaire
