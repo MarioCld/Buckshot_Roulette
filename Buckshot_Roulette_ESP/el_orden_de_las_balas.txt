@@ -1,3 +1,4 @@
-1 - verdad
-1 - verdad
 0 - salva
+0 - salva
+1 - verdad
+1 - verdad

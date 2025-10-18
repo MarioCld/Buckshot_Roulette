@@ -489,7 +489,7 @@ void bala_escopeta(jugador *j, jugador *jug, int *cortado, int *a_salvo, int esc
                 }
                 (*no_balas)--; //disminuir el numero de balas 
             }
-            else
+            else //si la bala es de salva
             {
                 printf("\nEl jugador esta a salvo...por ahora!n");
                 (*a_salvo)++; //sigue siendo el turno del mismo jugador
@@ -531,7 +531,7 @@ void bala_escopeta(jugador *j, jugador *jug, int *cortado, int *a_salvo, int esc
                 }
                 (*no_balas)--; //disminuir el numero de balas
             }
-            else
+            else //si la bala es de salva
             {
                 printf("\nEl oponente esta a salvo...por ahora!\n");
                 (*a_salvo)++; //sigue siendo el turno del mismo jugador 
@@ -659,7 +659,7 @@ void seleccionar_objeto(int escopeta[], jugador *j, objeto *it, int *no_balas_de
     int elijo; //eleccion del objeto
     char elegido[20]; //el objeto elegido
     int ok; //verificar si el jugador tiene el objeto que quiere utilizar
-    int cortado=0; //si el jugador
+    int cortado=0; //si el jugador usa el serrucho
     int a_salvo=0; //si el jugador se disparo a si mismo y esta a salvo
     printf("\nObjeto = ");
     scanf("%d",&elijo); //elije que objeto vas a utilizar
